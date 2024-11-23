@@ -1,0 +1,398 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    padding: 0; /* Remove extra space */
+}
+
+header img {
+    width: 100%; /* Ensure the banner spans full width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Removes extra spacing around the image */
+}
+
+
+header h1 {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    color: white; /* Contrast against the banner */
+    font-size: 2.5em; /* Adjust font size */
+    margin: 0;
+    z-index: 1; /* Ensure it appears above the image */
+}
+
+header nav {
+    position: absolute;
+    bottom: 10%; /* Place navigation near the bottom of the banner */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure it appears above the image */
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Gallery Section */
+#gallery {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+#gallery h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.faq-item p {
+    display: none;
+    margin: 10px 0;
+    color: #555;
+}
+
+.faq-item.active p {
+    display: block;
+}
+
+body {
+    background-color: #f4f1de; /* Light beige */
+}
+
+
+@media screen and (max-width: 600px) {
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main {
+        margin-left: 0;
+    }
+}
+
+/* General Styles */
+.collapsible-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.collapsible {
+    cursor: pointer;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.icon {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Collapsible Content */
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    padding: 0 20px;
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.product-listings {
+    text-align: center;
+    padding: 20px;
+    background-color: #fdf6e3; /* Optional: Soft beige background */
+    border-radius: 10px;
+}
+
+.product-listings h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.listings-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.listing {
+    width: 250px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.listing:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.listing img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.listing p {
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #555;
+    font-size: 1em;
+}
+
+.listing a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#contact-section h2 {
+    cursor: pointer;
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+#contact-section h2:hover {
+    background-color: #333;
+}
+
+#contact-form {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.reviews-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow-y: auto;
+    max-height: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-box blockquote {
+    margin: 10px 0;
+    padding: 10px;
+    font-style: italic;
+    border-left: 4px solid #d4af37; /* gold accent */
+    color: #333;
+}
+
+.reviews-box cite {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #555;
+    text-align: right;
+}
+
+.reviews-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.reviews-container::-webkit-scrollbar-thumb {
+    background: #d4af37; /* gold */
+    border-radius: 4px;
+}
+
+
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 80%; /* Adjust size here */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded edges for the container */
+}
+
+/* Row for 3 images */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; /* Space between images */
+}
+
+/* Images within the row */
+.row img {
+    width: 30%; /* Each image takes 30% of the container width */
+    height: auto;
+    border-radius: 10px; /* Rounded edges for the images */
+    transition: transform 0.5s ease; /* Smooth hover effect */
+}
+
+.row img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Hide the slides by default */
+.slide {
+    display: none;
+}
+
+/* Add fade animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+
+/* Navigation buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
